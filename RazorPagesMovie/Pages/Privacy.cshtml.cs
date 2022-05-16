@@ -14,6 +14,8 @@ namespace RazorPagesMovie.Pages
 
         public void OnGet()
         {
+            _logger.LogInformation("About page visited at {DT}",
+          DateTime.UtcNow.ToLongTimeString());
         }
     }
 }
